@@ -4,58 +4,177 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minerale - Calcar</title>
+    <title>Calcar - Mineralia</title>
+    <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
-    <table border="1" width="100%" cellpadding="10" cellspacing="0">
-        <tr>
-            <td colspan="2" align="center">
-                <h1>Calcar</h1>
-            </td>
-        </tr>
-        <tr>
-            <td width="35%" valign="top" align="center">
-                <img src="../images/calcar.png" alt="Calcar" width="220">
-                <p>
-                    <a href="../index.html">
-                        <br>Acasă
-                    </a>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="../index.html" class="site-logo">
+                <div class="logo-icon">&#x1F48E;</div>
+                <span class="logo-text">Mine<span>ralia</span></span>
+            </a>
+            <nav class="site-nav">
+                <a href="../index.html">Acasa</a>
+                <a href="cuart.html">Cuart</a>
+                <a href="diamant.html">Diamant</a>
+                <a href="calcar.html" class="active">Calcar</a>
+                <a href="granit.html">Granit</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="mineral-hero">
+        <div class="mineral-hero-inner">
+            <div class="breadcrumb">
+                <a href="../index.html">Acasa</a>
+                <span class="breadcrumb-sep">&rsaquo;</span>
+                <span>Calcar</span>
+            </div>
+            <div
+                style="display:inline-block;background:rgba(184,134,11,0.2);border:1px solid rgba(184,134,11,0.4);color:var(--gold-light);font-size:0.75rem;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;padding:0.35rem 0.9rem;border-radius:20px;margin-bottom:1rem;">
+                Roca sedimentara &middot; CaCO&sup3;</div>
+            <h1>Calcar</h1>
+            <p class="mineral-hero-sub">Roca sedimentara &middot; Baza industriei constructiilor</p>
+        </div>
+    </section>
+
+    <div class="mineral-content">
+        <div class="mineral-layout">
+
+            <aside class="mineral-sidebar">
+                <img src="../images/calcar.png" alt="Calcar" class="mineral-photo">
+                <div class="sidebar-nav">
+                    <p class="sidebar-nav-title">Alte Minerale</p>
+                    <a href="../index.html"><span class="nav-arrow">&larr;</span> Pagina principala</a>
+                    <a href="cuart.html"><span class="nav-arrow">&larr;</span> Cuart</a>
+                    <a href="diamant.html"><span class="nav-arrow">&larr;</span> Diamant</a>
+                    <a href="granit.html"><span class="nav-arrow">&rarr;</span> Granit</a>
+                </div>
+            </aside>
+
+            <main class="mineral-main">
+
+                <p class="mineral-intro">
+                    Calcarul este o roca sedimentara compusa in principal din calcit (carbonat de calciu, CaCO3).
+                    Este foarte important in industria materialelor de constructie, in special la producerea
+                    cimentului si varului.
                 </p>
-            </td>
-            <td width="65%" valign="top">
-                <p>Calcarul este o rocă sedimentară compusă în principal din calcit (carbonat de calciu, CaCO₃).</p>
-                <p>Este foarte important în industria materialelor de construcție, în special la producerea cimentului
-                    și varului.</p>
 
-                <h3>Caracteristici</h3>
-                <table border="1" cellpadding="6" cellspacing="0">
-                    <tr>
-                        <th>Proprietate</th>
-                        <th>Valoare</th>
-                    </tr>
-                    <tr>
-                        <td>Tip</td>
-                        <td>Rocă sedimentară</td>
-                    </tr>
-                    <tr>
-                        <td>Compoziție principală</td>
-                        <td>CaCO₃</td>
-                    </tr>
-                    <tr>
-                        <td>Culoare</td>
-                        <td>Alb, gri, gălbui</td>
-                    </tr>
-                    <tr>
-                        <td>Utilizări</td>
-                        <td>Ciment, var, construcții</td>
-                    </tr>
-                </table>
+                <div class="mineral-body">
+                    <p>
+                        Calcarul se formeaza in medii marine sau de apa dulce, prin acumularea de schelete si
+                        cochilii ale organismelor marine (corali, moluste, alge). Poate fi biochimic (organic)
+                        sau chimic (precipitat direct din apa).
+                    </p>
+                    <p>
+                        Este una din cele mai raspandite roci sedimentare de pe Pamant si acopera aproximativ
+                        10-15% din suprafata uscatelor. In Moldova, calcarul este prezent in Codri si in
+                        vaii raurilor principale.
+                    </p>
 
-                <p><a href="granit.html">Următorul: Granit</a></p>
-            </td>
-        </tr>
-    </table>
+                    <h2 class="char-title">Caracteristici</h2>
+
+                    <table class="props-table">
+                        <thead>
+                            <tr>
+                                <th>Proprietate</th>
+                                <th>Valoare</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Tip</td>
+                                <td>Roca sedimentara</td>
+                            </tr>
+                            <tr>
+                                <td>Compozitie principala</td>
+                                <td>CaCO3 (calcit)</td>
+                            </tr>
+                            <tr>
+                                <td>Culoare</td>
+                                <td>Alb, gri, galbui, bej</td>
+                            </tr>
+                            <tr>
+                                <td>Duritate (Mohs)</td>
+                                <td>3 (calcit)</td>
+                            </tr>
+                            <tr>
+                                <td>Densitate</td>
+                                <td>2.5-2.7 g/cm&sup3;</td>
+                            </tr>
+                            <tr>
+                                <td>Reactie la acid</td>
+                                <td>Efervescenta cu HCl diluat</td>
+                            </tr>
+                            <tr>
+                                <td>Utilizari</td>
+                                <td>Ciment, var, constructii</td>
+                            </tr>
+                            <tr>
+                                <td>Formare</td>
+                                <td>Mediu marin, precipitare chimica</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="fact-box">
+                        <div class="fact-box-title">&#x1F5FB; Fapte interesante despre Calcar</div>
+                        <ul>
+                            <li>Marea Piramida din Giza este construita in principal din blocuri de calcar</li>
+                            <li>Pestile si stalagmitele se formeaza prin dizolvarea si redepunerea calcarului</li>
+                            <li>Calcarul este solubil in apa cu CO2 dizolvat, formand relief carstic</li>
+                            <li>Circa 10% din rocile sedimentare de pe Pamant sunt calcare</li>
+                            <li>Calcarul marmorat sub presiune si caldura devine marmura</li>
+                        </ul>
+                    </div>
+
+                    <h2 class="char-title">Utilizari Principale</h2>
+                    <p>
+                        Industria cimentului consuma cea mai mare parte din productia mondiala de calcar.
+                        Prin ardere (la 900 grade C) se obtine varul nestins (CaO), iar prin stingere cu apa,
+                        varul stins (Ca(OH)2), esential in constructii si agricultura.
+                    </p>
+                    <p>
+                        Calcarul taiat (piatra de calcar) a fost folosit ca material de constructie inca din
+                        Antichitate. Astazi mai este utilizat in industria siderurgica, in purificarea apei
+                        potabile si in producerea hartiei.
+                    </p>
+                </div>
+
+                <div class="page-navigation">
+                    <a href="diamant.html" class="nav-btn">
+                        <span class="nav-btn-label">&larr; Anterior</span>
+                        <span class="nav-btn-name">Diamant</span>
+                    </a>
+                    <span class="nav-center">&#9670;</span>
+                    <a href="granit.html" class="nav-btn right">
+                        <span class="nav-btn-label">Urmatorul &rarr;</span>
+                        <span class="nav-btn-name">Granit</span>
+                    </a>
+                </div>
+
+            </main>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-bottom">
+                <span>2025 Mineralia &middot; Lucrare de Laborator N1 &middot; Tehnologii Web</span>
+                <div class="footer-bottom-links">
+                    <a href="../index.html">Acasa</a>
+                    <a href="cuart.html">Cuart</a>
+                    <a href="diamant.html">Diamant</a>
+                    <a href="calcar.html">Calcar</a>
+                    <a href="granit.html">Granit</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 </body>
 
 </html>

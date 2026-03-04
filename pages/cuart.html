@@ -2,60 +2,186 @@
 <html lang="ro">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minerale - Cuarț</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cuarț – Mineralia</title>
+  <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
-    <table border="1" width="100%" cellpadding="10" cellspacing="0">
-        <tr>
-            <td colspan="2" align="center">
-                <h1>Cuarț</h1>
-            </td>
-        </tr>
-        <tr>
-            <td width="35%" valign="top" align="center">
-                <img src="../images/cuart.png" alt="Cristal de cuarț" width="220">
-                <p>
-                    <a href="../index.html">
-                        <br>Acasă
-                    </a>
-                </p>
-            </td>
-            <td width="65%" valign="top">
-                <p>Cuarțul este unul dintre cele mai răspândite minerale din scoarța terestră. Formula chimică este SiO₂
-                    (dioxid de siliciu).</p>
-                <p>Poate fi transparent, alb, roz, violet sau fumuriu, în funcție de impurități.</p>
 
-                <h3>Caracteristici</h3>
-                <table border="1" cellpadding="6" cellspacing="0">
-                    <tr>
-                        <th>Proprietate</th>
-                        <th>Valoare</th>
-                    </tr>
-                    <tr>
-                        <td>Duritate (Mohs)</td>
-                        <td>7</td>
-                    </tr>
-                    <tr>
-                        <td>Culoare</td>
-                        <td>Variată</td>
-                    </tr>
-                    <tr>
-                        <td>Luciu</td>
-                        <td>Sticlos</td>
-                    </tr>
-                    <tr>
-                        <td>Sistem cristalin</td>
-                        <td>Trigonal</td>
-                    </tr>
-                </table>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="../index.html" class="site-logo">
+        <div class="logo-icon">💎</div>
+        <span class="logo-text">Mine<span>ralia</span></span>
+      </a>
+      <nav class="site-nav">
+        <a href="../index.html">Acasă</a>
+        <a href="cuart.html" class="active">Cuarț</a>
+        <a href="diamant.html">Diamant</a>
+        <a href="calcar.html">Calcar</a>
+        <a href="granit.html">Granit</a>
+      </nav>
+    </div>
+  </header>
 
-                <p><a href="diamant.html">Următorul: Diamant</a></p>
-            </td>
-        </tr>
-    </table>
+  <!-- MINERAL HERO -->
+  <section class="mineral-hero">
+    <div class="mineral-hero-inner">
+      <div class="breadcrumb">
+        <a href="../index.html">Acasă</a>
+        <span class="breadcrumb-sep">›</span>
+        <span>Cuarț</span>
+      </div>
+      <div class="hero-label"
+        style="display:inline-block;background:rgba(184,134,11,0.2);border:1px solid rgba(184,134,11,0.4);color:var(--gold-light);font-size:0.75rem;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;padding:0.35rem 0.9rem;border-radius:20px;margin-bottom:1rem;">
+        Mineral · SiO₂</div>
+      <h1>Cuarț</h1>
+      <p class="mineral-hero-sub">Dioxid de siliciu · Cel mai răspândit mineral din scoarță</p>
+    </div>
+  </section>
+
+  <!-- MINERAL CONTENT -->
+  <div class="mineral-content">
+    <div class="mineral-layout">
+
+      <!-- SIDEBAR -->
+      <aside class="mineral-sidebar">
+        <img src="../images/cuart.png" alt="Cristale de cuarț" class="mineral-photo">
+
+        <div class="sidebar-nav">
+          <p class="sidebar-nav-title">Alte Minerale</p>
+          <a href="../index.html"><span class="nav-arrow">←</span> Pagina principală</a>
+          <a href="diamant.html"><span class="nav-arrow">→</span> Diamant</a>
+          <a href="calcar.html"><span class="nav-arrow">→</span> Calcar</a>
+          <a href="granit.html"><span class="nav-arrow">→</span> Granit</a>
+        </div>
+      </aside>
+
+      <!-- MAIN -->
+      <main class="mineral-main">
+
+        <p class="mineral-intro">
+          Cuarțul este unul dintre cele mai răspândite minerale din scoarța terestră,
+          cu formula chimică SiO₂ (dioxid de siliciu). Poate fi transparent, alb, roz,
+          violet sau fumuriu, în funcție de impurități.
+        </p>
+
+        <div class="mineral-body">
+          <p>
+            Cuarțul face parte din clasa silicaților și cristalizează în sistemul trigonal.
+            Se formează în roci magmatice, metamorfice și sedimentare, fiind unul dintre
+            componentele principale ale granitului și multor nisipuri.
+          </p>
+          <p>
+            Datorită durității sale ridicate (7 pe scara Mohs) și rezistenței chimice,
+            cuarțul este utilizat pe scară largă în industrie – de la fabricarea sticlei
+            până la semiconductori și oscilatoare de cuarț în ceasuri și dispozitive electronice.
+          </p>
+
+          <h2 class="char-title">Caracteristici</h2>
+
+          <table class="props-table">
+            <thead>
+              <tr>
+                <th>Proprietate</th>
+                <th>Valoare</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Formulă chimică</td>
+                <td>SiO₂</td>
+              </tr>
+              <tr>
+                <td>Duritate (Mohs)</td>
+                <td>7</td>
+              </tr>
+              <tr>
+                <td>Culoare</td>
+                <td>Variată (incolor, alb, roz, violet, fumuriu)</td>
+              </tr>
+              <tr>
+                <td>Luciu</td>
+                <td>Sticlos</td>
+              </tr>
+              <tr>
+                <td>Sistem cristalin</td>
+                <td>Trigonal</td>
+              </tr>
+              <tr>
+                <td>Densitate</td>
+                <td>2.65 g/cm³</td>
+              </tr>
+              <tr>
+                <td>Clivaj</td>
+                <td>Absent (spărtură concoidală)</td>
+              </tr>
+              <tr>
+                <td>Transparență</td>
+                <td>Transparent până la opac</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="fact-box">
+            <div class="fact-box-title">🔬 Fapte interesante despre Cuarț</div>
+            <ul>
+              <li>Cuarțul piezoelectric este folosit în ceasuri și electronice pentru precizie înaltă</li>
+              <li>Ametistul, citrinul și cuarțul roz sunt varietăți ale aceluiași mineral</li>
+              <li>Nisipul de pe plaje este format în mare parte din granule de cuarț</li>
+              <li>Cristalele de cuarț pot atinge dimensiuni de câțiva metri în cavitățile geologice</li>
+              <li>Cuarțul este rezistent la acizi, cu excepția acidului fluorhidric</li>
+            </ul>
+          </div>
+
+          <h2 class="char-title">Utilizări Principale</h2>
+          <p>
+            În industria sticlei, cuarțul este materia primă esențială. Siliciul extras din cuarț
+            stă la baza semiconductorilor și a industriei electronice moderne. Varietățile
+            gemologice (ametist, citrin, cuarț roz) sunt prețuite în bijuterii.
+          </p>
+          <p>
+            Cuarțul mai este utilizat în fabricarea ceramicii, a materialelor refractare,
+            a filtrelor de apă și a abrazivilor industriali.
+          </p>
+        </div>
+
+        <!-- NAVIGARE PAGINI -->
+        <div class="page-navigation">
+          <a href="../index.html" class="nav-btn">
+            <span class="nav-btn-label">← Înapoi</span>
+            <span class="nav-btn-name">Pagina principală</span>
+          </a>
+          <span class="nav-center">◆</span>
+          <a href="diamant.html" class="nav-btn right">
+            <span class="nav-btn-label">Următorul →</span>
+            <span class="nav-btn-name">Diamant</span>
+          </a>
+        </div>
+
+      </main>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-bottom">
+        <span>© 2025 Mineralia · Lucrare de Laborator N1 · Tehnologii Web</span>
+        <div class="footer-bottom-links">
+          <a href="../index.html">Acasă</a>
+          <a href="cuart.html">Cuarț</a>
+          <a href="diamant.html">Diamant</a>
+          <a href="calcar.html">Calcar</a>
+          <a href="granit.html">Granit</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
 </body>
 
 </html>

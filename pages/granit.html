@@ -2,60 +2,179 @@
 <html lang="ro">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minerale - Granit</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Granit - Mineralia</title>
+  <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
-    <table border="1" width="100%" cellpadding="10" cellspacing="0">
-        <tr>
-            <td colspan="2" align="center">
-                <h1>Granit</h1>
-            </td>
-        </tr>
-        <tr>
-            <td width="35%" valign="top" align="center">
-                <img src="../images/granit.png" alt="Granit" width="220">
-                <p>
-                    <a href="../index.html">
-                        <br>Acasă
-                    </a>
-                </p>
-            </td>
-            <td width="65%" valign="top">
-                <p>Granitul este o rocă magmatică intruzivă formată în principal din cuarț, feldspat și mică.</p>
-                <p>Datorită rezistenței mari și aspectului decorativ, este folosit în construcții, pavaje și monumente.
-                </p>
 
-                <h3>Caracteristici</h3>
-                <table border="1" cellpadding="6" cellspacing="0">
-                    <tr>
-                        <th>Proprietate</th>
-                        <th>Valoare</th>
-                    </tr>
-                    <tr>
-                        <td>Tip</td>
-                        <td>Rocă magmatică</td>
-                    </tr>
-                    <tr>
-                        <td>Minerale principale</td>
-                        <td>Cuarț, feldspat, mică</td>
-                    </tr>
-                    <tr>
-                        <td>Textură</td>
-                        <td>Granulară</td>
-                    </tr>
-                    <tr>
-                        <td>Utilizări</td>
-                        <td>Blaturi, monumente, pavaj</td>
-                    </tr>
-                </table>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="../index.html" class="site-logo">
+        <div class="logo-icon">&#x1F48E;</div>
+        <span class="logo-text">Mine<span>ralia</span></span>
+      </a>
+      <nav class="site-nav">
+        <a href="../index.html">Acasa</a>
+        <a href="cuart.html">Cuart</a>
+        <a href="diamant.html">Diamant</a>
+        <a href="calcar.html">Calcar</a>
+        <a href="granit.html" class="active">Granit</a>
+      </nav>
+    </div>
+  </header>
 
-                <p><a href="../index.html">Înapoi la pagina principală</a></p>
-            </td>
-        </tr>
-    </table>
+  <section class="mineral-hero">
+    <div class="mineral-hero-inner">
+      <div class="breadcrumb">
+        <a href="../index.html">Acasa</a>
+        <span class="breadcrumb-sep">&rsaquo;</span>
+        <span>Granit</span>
+      </div>
+      <div
+        style="display:inline-block;background:rgba(184,134,11,0.2);border:1px solid rgba(184,134,11,0.4);color:var(--gold-light);font-size:0.75rem;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;padding:0.35rem 0.9rem;border-radius:20px;margin-bottom:1rem;">
+        Roca magmatica &middot; Intruziva</div>
+      <h1>Granit</h1>
+      <p class="mineral-hero-sub">Roca magmatica intruziva &middot; Cuart, Feldspat si Mica</p>
+    </div>
+  </section>
+
+  <div class="mineral-content">
+    <div class="mineral-layout">
+
+      <aside class="mineral-sidebar">
+        <img src="../images/granit.png" alt="Granit" class="mineral-photo">
+        <div class="sidebar-nav">
+          <p class="sidebar-nav-title">Alte Minerale</p>
+          <a href="../index.html"><span class="nav-arrow">&larr;</span> Pagina principala</a>
+          <a href="cuart.html"><span class="nav-arrow">&larr;</span> Cuart</a>
+          <a href="diamant.html"><span class="nav-arrow">&larr;</span> Diamant</a>
+          <a href="calcar.html"><span class="nav-arrow">&larr;</span> Calcar</a>
+        </div>
+      </aside>
+
+      <main class="mineral-main">
+
+        <p class="mineral-intro">
+          Granitul este o roca magmatica intruziva formata in principal din cuart, feldspat si mica.
+          Datorita rezistentei mari si aspectului decorativ, este folosit in constructii,
+          pavaje si monumente.
+        </p>
+
+        <div class="mineral-body">
+          <p>
+            Granitul se formeaza prin racirea lenta a magmei la adancimi mari in scoarta terestra.
+            Racirea lenta permite formarea cristalelor mari, vizibile cu ochiul liber, care dau
+            granitului textura sa granulara caracteristica.
+          </p>
+          <p>
+            Este una din cele mai dure si mai rezistente roci cunoscute, cu o durata de viata
+            practic nelimitata in conditii normale. Munti intregi sunt formati din granit:
+            Alpii, Anaptii, Muntii Scandinaviei.
+          </p>
+
+          <h2 class="char-title">Caracteristici</h2>
+
+          <table class="props-table">
+            <thead>
+              <tr>
+                <th>Proprietate</th>
+                <th>Valoare</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Tip</td>
+                <td>Roca magmatica</td>
+              </tr>
+              <tr>
+                <td>Minerale principale</td>
+                <td>Cuart (20-40%), Feldspat (50-60%), Mica (5-15%)</td>
+              </tr>
+              <tr>
+                <td>Textura</td>
+                <td>Granulara (cristale vizibile)</td>
+              </tr>
+              <tr>
+                <td>Duritate</td>
+                <td>6-7 pe scara Mohs</td>
+              </tr>
+              <tr>
+                <td>Densitate</td>
+                <td>2.65-2.75 g/cm&sup3;</td>
+              </tr>
+              <tr>
+                <td>Culoare</td>
+                <td>Gri, roz, alb, negru (dupa minerale)</td>
+              </tr>
+              <tr>
+                <td>Utilizari</td>
+                <td>Blaturi, monumente, pavaj, constructii</td>
+              </tr>
+              <tr>
+                <td>Rezistenta</td>
+                <td>Foarte buna la compresiune si intemperii</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="fact-box">
+            <div class="fact-box-title">&#x26F0;&#xFE0F; Fapte interesante despre Granit</div>
+            <ul>
+              <li>Granitul este roca cea mai frecventa in scoarta continentala a Pamantului</li>
+              <li>Muntele Rushmore este sculptat in granit si a durat 14 ani de lucru</li>
+              <li>Granitul poate rezista la temperaturi de pana la 1200 grade C</li>
+              <li>Blaturile de bucatarie din granit sunt printre cele mai durabile existente</li>
+              <li>Granitul contine urme de uraniu si thoriu, emitand o radiatie naturala mica</li>
+            </ul>
+          </div>
+
+          <h2 class="char-title">Utilizari Principale</h2>
+          <p>
+            In arhitectura si constructii, granitul este folosit pentru fatade, pardoseli, trepte,
+            borduri si monumente funerare. Rezistenta sa la uzura si aspectul estetic il fac
+            ideal pentru spatii publice cu trafic intens.
+          </p>
+          <p>
+            In industria alimentara, blaturile din granit sunt apreciate pentru rezistenta
+            la caldura, bacterii si zgarieturi. In monumentistica, granitul negru si rosu
+            sunt cele mai utilizate soiuri.
+          </p>
+        </div>
+
+        <div class="page-navigation">
+          <a href="calcar.html" class="nav-btn">
+            <span class="nav-btn-label">&larr; Anterior</span>
+            <span class="nav-btn-name">Calcar</span>
+          </a>
+          <span class="nav-center">&#9670;</span>
+          <a href="../index.html" class="nav-btn right">
+            <span class="nav-btn-label">Inapoi la &rarr;</span>
+            <span class="nav-btn-name">Pagina principala</span>
+          </a>
+        </div>
+
+      </main>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-bottom">
+        <span>2025 Mineralia &middot; Lucrare de Laborator N1 &middot; Tehnologii Web</span>
+        <div class="footer-bottom-links">
+          <a href="../index.html">Acasa</a>
+          <a href="cuart.html">Cuart</a>
+          <a href="diamant.html">Diamant</a>
+          <a href="calcar.html">Calcar</a>
+          <a href="granit.html">Granit</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
 </body>
 
 </html>
