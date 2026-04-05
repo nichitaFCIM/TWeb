@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minerale & Roci – Lucrarea de laborator N1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="index.html" class="site-logo">
+                <div class="logo-icon">💎</div>
+                <span class="logo-text">Mine<span>ralia</span></span>
+            </a>
+
+            <!-- Buton meniu pentru mobil (JS il arata/ascunde) -->
+            <button id="menu-btn">&#9776;</button>
+
+            <nav class="site-nav" id="site-nav">
+                <a href="index.html" class="active">Acasa</a>
+                <a href="pages/cuart.html">Cuart</a>
+                <a href="pages/diamant.html">Diamant</a>
+                <a href="pages/calcar.html">Calcar</a>
+                <a href="pages/granit.html">Granit</a>
+                <a href="contact.php">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-inner">
+            <div class="hero-text">
+                <span class="hero-label">Stiinte Naturale · Lucrarea N1</span>
+                <h1>Lumea <em>Mineralelor</em> si Rocilor</h1>
+                <p class="hero-desc">
+                    Mineralele sunt substante solide naturale, cu compozitie chimica bine definita
+                    si structura cristalina specifica. Ele formeaza rocile si au o importanta
+                    majora in industrie, constructii, tehnologie si bijuterii.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-num">4</span>
+                        <span class="stat-label">Minerale</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-num">10</span>
+                        <span class="stat-label">Scara Mohs</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-num">3</span>
+                        <span class="stat-label">Tipuri de roci</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image-wrap">
+                <img src="images/granit.png" alt="Granit roca magmatica">
+                <div class="hero-image-badge">Granit Natural</div>
+            </div>
+        </div>
+    </section>
+
+    <div class="page-wrapper">
+
+        <!-- HARTA INTERACTIVA -->
+        <section class="map-section">
+            <div class="section-label">
+                <span class="section-tag">Interactiv</span>
+            </div>
+            <h2 class="section-title">Imagine Interactiva (MAP)</h2>
+            <p class="section-desc">Apasa pe zonele imaginii pentru a deschide paginile despre minerale:</p>
+
+            <div class="map-container">
+                <map name="minerale-map">
+                    <area shape="rect" coords="0,0,193,300" href="pages/cuart.html" alt="Cuart" title="Cuart">
+                    <area shape="rect" coords="193,0,387,300" href="pages/diamant.html" alt="Diamant" title="Diamant">
+                    <area shape="rect" coords="387,0,580,300" href="pages/calcar.html" alt="Calcar" title="Calcar">
+                    <area shape="rect" coords="0,300,290,601" href="pages/granit.html" alt="Granit" title="Granit">
+                </map>
+                <img src="images/home.png" usemap="#minerale-map" alt="Harta interactiva minerale"
+                    style="display:block;width:580px;max-width:100%;">
+            </div>
+        </section>
+
+        <!-- CARTONASE MINERALE - JS le animeaza la scroll -->
+        <section class="minerals-grid-section">
+            <div class="section-label">
+                <span class="section-tag">Catalog</span>
+            </div>
+            <h2 class="section-title">Mineralele si Rocile Prezentate</h2>
+            <p class="section-desc">Exploreaza fiecare mineral sau roca in parte, cu informatii detaliate si proprietati.</p>
+
+            <div class="minerals-grid">
+
+                <a href="pages/cuart.html" class="mineral-card">
+                    <img src="images/cuart.png" alt="Cuart" class="card-image">
+                    <div class="card-body">
+                        <span class="card-type type-mineral">Mineral</span>
+                        <h3 class="card-name">Cuart</h3>
+                        <p class="card-desc">Unul din cele mai raspandite minerale din scoarta terestra. Formula chimica: SiO2.</p>
+                        <div class="card-props">
+                            <span class="prop-tag">Duritate: 7 Mohs</span>
+                            <span class="prop-tag">Luciu: Sticlos</span>
+                            <span class="prop-tag">Sistem: Trigonal</span>
+                        </div>
+                        <span class="card-link">Citeste mai mult &rarr;</span>
+                    </div>
+                </a>
+
+                <a href="pages/diamant.html" class="mineral-card">
+                    <img src="images/diamant.png" alt="Diamant" class="card-image">
+                    <div class="card-body">
+                        <span class="card-type type-mineral">Mineral</span>
+                        <h3 class="card-name">Diamant</h3>
+                        <p class="card-desc">Cea mai dura substanta naturala cunoscuta. Forma cristalina a carbonului pur.</p>
+                        <div class="card-props">
+                            <span class="prop-tag">Duritate: 10 Mohs</span>
+                            <span class="prop-tag">Compozitie: C</span>
+                            <span class="prop-tag">Luciu: Adamantin</span>
+                        </div>
+                        <span class="card-link">Citeste mai mult &rarr;</span>
+                    </div>
+                </a>
+
+                <a href="pages/calcar.html" class="mineral-card">
+                    <img src="images/calcar.png" alt="Calcar" class="card-image">
+                    <div class="card-body">
+                        <span class="card-type type-roca">Roca sedimentara</span>
+                        <h3 class="card-name">Calcar</h3>
+                        <p class="card-desc">Roca sedimentara compusa in principal din calcit (CaCO3). Esentiala in constructii.</p>
+                        <div class="card-props">
+                            <span class="prop-tag">Tip: Sedimentara</span>
+                            <span class="prop-tag">Compozitie: CaCO3</span>
+                            <span class="prop-tag">Culoare: Alb-gri</span>
+                        </div>
+                        <span class="card-link">Citeste mai mult &rarr;</span>
+                    </div>
+                </a>
+
+                <a href="pages/granit.html" class="mineral-card">
+                    <img src="images/granit.png" alt="Granit" class="card-image">
+                    <div class="card-body">
+                        <span class="card-type type-roca">Roca magmatica</span>
+                        <h3 class="card-name">Granit</h3>
+                        <p class="card-desc">Roca magmatica intruziva formata din cuart, feldspat si mica. Rezistenta si decorativa.</p>
+                        <div class="card-props">
+                            <span class="prop-tag">Tip: Magmatica</span>
+                            <span class="prop-tag">Textura: Granulara</span>
+                            <span class="prop-tag">Utilizare: Constructii</span>
+                        </div>
+                        <span class="card-link">Citeste mai mult &rarr;</span>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+
+        <!-- TABEL CLASIFICARE - barele sunt animate cu JS -->
+        <section class="table-section">
+            <div class="section-label">
+                <span class="section-tag">Date</span>
+            </div>
+            <h2 class="section-title">Clasificare Comparativa</h2>
+            <p class="section-desc">Comparatie rapida a proprietatilor si utilizarilor mineralelor prezentate.</p>
+
+            <table class="minerals-table">
+                <thead>
+                    <tr>
+                        <th>Mineral / Roca</th>
+                        <th>Tip</th>
+                        <th>Duritate (Mohs)</th>
+                        <th>Utilizare principala</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="pages/cuart.html" style="color:var(--gold);text-decoration:none;">Cuart</a></td>
+                        <td><span class="badge badge-mineral">Mineral</span></td>
+                        <td>
+                            <div class="hardness-bar">
+                                <span style="min-width:1.5rem;font-weight:600;">7</span>
+                                <!-- data-width este citit de JavaScript pentru animatie -->
+                                <div class="bar-bg">
+                                    <div class="bar-fill" data-width="70%"></div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>Sticla, electronice, bijuterii</td>
+                    </tr>
+                    <tr>
+                        <td><a href="pages/diamant.html" style="color:var(--gold);text-decoration:none;">Diamant</a></td>
+                        <td><span class="badge badge-mineral">Mineral</span></td>
+                        <td>
+                            <div class="hardness-bar">
+                                <span style="min-width:1.5rem;font-weight:600;">10</span>
+                                <div class="bar-bg">
+                                    <div class="bar-fill" data-width="100%"></div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>Bijuterii, unelte de taiere</td>
+                    </tr>
+                    <tr>
+                        <td><a href="pages/calcar.html" style="color:var(--gold);text-decoration:none;">Calcar</a></td>
+                        <td><span class="badge badge-roca">Roca sed.</span></td>
+                        <td>
+                            <div class="hardness-bar">
+                                <span style="min-width:1.5rem;font-weight:600;">3</span>
+                                <div class="bar-bg">
+                                    <div class="bar-fill" data-width="30%"></div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>Ciment, constructii, var</td>
+                    </tr>
+                    <tr>
+                        <td><a href="pages/granit.html" style="color:var(--gold);text-decoration:none;">Granit</a></td>
+                        <td><span class="badge badge-roca">Roca mag.</span></td>
+                        <td>
+                            <div class="hardness-bar">
+                                <span style="min-width:1.5rem;font-weight:600;">6-7</span>
+                                <div class="bar-bg">
+                                    <div class="bar-fill" data-width="65%"></div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>Placi decorative, monumente</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- QUIZ - creat in totalitate cu JavaScript -->
+        <section class="quiz-section">
+            <div class="section-label">
+                <span class="section-tag">Test</span>
+            </div>
+            <h2 class="section-title">Quiz - Testeaza-ti cunostintele</h2>
+            <p class="section-desc">Raspunde la 4 intrebari despre mineralele studiate:</p>
+
+            <!-- Acest div este completat automat de JavaScript -->
+            <div id="quiz-box"></div>
+        </section>
+
+    </div><!-- end page-wrapper -->
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div style="display:flex;align-items:center;gap:10px;margin-bottom:0.5rem;">
+                        <div class="logo-icon" style="width:32px;height:32px;font-size:15px;">&#x1F48E;</div>
+                        <span style="font-family:'Playfair Display',serif;font-size:1.2rem;color:var(--stone-200);">Mineralia</span>
+                    </div>
+                    <p>Proiect educational despre mineralele si rocile din natura inconjuratoare. Lucrarea de laborator N1 - Tehnologii Web.</p>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Navigare</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Pagina principala</a></li>
+                        <li><a href="pages/cuart.html">Cuart</a></li>
+                        <li><a href="pages/diamant.html">Diamant</a></li>
+                        <li><a href="pages/calcar.html">Calcar</a></li>
+                        <li><a href="pages/granit.html">Granit</a></li>
+                        <li><a href="contact.php">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Tipuri de roci</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Roci magmatice</a></li>
+                        <li><a href="#">Roci sedimentare</a></li>
+                        <li><a href="#">Roci metamorfice</a></li>
+                        <li><a href="#">Minerale native</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; 2025 Mineralia &middot; Lucrare de Laborator N1 &middot; Tehnologii Web</span>
+                <div class="footer-bottom-links">
+                    <a href="index.html">Acasa</a>
+                    <a href="pages/cuart.html">Cuart</a>
+                    <a href="pages/diamant.html">Diamant</a>
+                    <a href="pages/calcar.html">Calcar</a>
+                    <a href="pages/granit.html">Granit</a>
+                    <a href="contact.php">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Buton "Inapoi sus" - JS il afiseaza dupa scroll -->
+    <button id="btn-sus" title="Inapoi sus">&#8593;</button>
+
+    <!-- Conectam fisierul JavaScript -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
