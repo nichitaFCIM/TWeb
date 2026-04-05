@@ -877,3 +877,221 @@ body {
   .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
   .header-inner { flex-direction: column; height: auto; padding: 1rem 2rem; gap: 1rem; }
 }
+
+
+/* =============================================
+   STILURI JAVASCRIPT – adaugate pentru branch 3
+   ============================================= */
+
+/* --- Meniu mobil --- */
+#menu-btn {
+  display: none;
+  background: none;
+  border: 1px solid var(--stone-600);
+  color: var(--white);
+  padding: 0.4rem 0.8rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+/* --- Animatie carduri la scroll --- */
+.mineral-card {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.mineral-card.vizibil {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* --- Quiz --- */
+.quiz-section {
+  background: var(--white);
+  border: 1px solid var(--stone-200);
+  border-radius: 12px;
+  padding: 2.5rem;
+  margin-bottom: 3rem;
+  box-shadow: var(--shadow-sm);
+}
+
+#quiz-box {
+  margin-top: 1.5rem;
+}
+
+.quiz-intrebare {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--stone-800);
+  margin-bottom: 1.2rem;
+}
+
+.quiz-variante {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+.quiz-btn {
+  background: var(--stone-100);
+  border: 1px solid var(--stone-300);
+  border-radius: 8px;
+  padding: 0.7rem 1.2rem;
+  text-align: left;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: 'Crimson Pro', serif;
+  transition: background 0.2s;
+}
+
+.quiz-btn:hover:not(:disabled) {
+  background: var(--gold-pale);
+  border-color: var(--gold);
+}
+
+.quiz-progres {
+  font-size: 0.85rem;
+  color: var(--stone-400);
+  margin-top: 0.5rem;
+}
+
+.quiz-rezultat {
+  text-align: center;
+  padding: 1rem;
+}
+
+.quiz-rezultat h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  color: var(--gold);
+  margin-bottom: 0.5rem;
+}
+
+.quiz-rezultat .quiz-btn {
+  margin-top: 1rem;
+  background: var(--stone-800);
+  color: var(--white);
+  border-color: var(--stone-800);
+  text-align: center;
+  cursor: pointer;
+}
+
+/* --- Bara duritate animata --- */
+.bar-fill {
+  width: 0%;
+  transition: width 1s ease;
+}
+
+/* --- Buton inapoi sus --- */
+#btn-sus {
+  display: none;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: var(--stone-800);
+  color: var(--white);
+  border: none;
+  border-radius: 50%;
+  width: 46px;
+  height: 46px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  z-index: 200;
+  box-shadow: var(--shadow-md);
+}
+
+#btn-sus:hover {
+  background: var(--gold);
+}
+
+/* --- Responsive meniu mobil --- */
+@media (max-width: 700px) {
+  #menu-btn {
+    display: block;
+  }
+
+  .site-nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 72px;
+    left: 0;
+    right: 0;
+    background: var(--stone-900);
+    padding: 1rem 2rem;
+    gap: 0.5rem;
+    z-index: 99;
+  }
+
+  .site-nav.open {
+    display: flex;
+  }
+}
+
+
+/* =============================================
+   LAYOUT NOU – o singura coloana, fara sidebar
+   (branch 3 – eliminat sidebar-ul)
+   ============================================= */
+
+/* Containerul principal devine o singura coloana centrata */
+.mineral-single {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 2rem 3rem;
+}
+
+/* Sectiunea de sus: imagine stanga + text dreapta */
+.mineral-top {
+  display: flex;
+  gap: 2.5rem;
+  align-items: flex-start;
+  margin-bottom: 2.5rem;
+}
+
+/* Imaginea in layout-ul nou */
+.mineral-photo-top {
+  width: 280px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--stone-200);
+}
+
+/* Textul din dreapta imaginii */
+.mineral-intro-wrap {
+  flex: 1;
+}
+
+.mineral-intro-wrap p {
+  margin-bottom: 1rem;
+  color: var(--stone-700);
+  font-size: 1.05rem;
+}
+
+/* Pe mobil: imaginea si textul se stivuiesc vertical */
+@media (max-width: 700px) {
+  .mineral-top {
+    flex-direction: column;
+  }
+  .mineral-photo-top {
+    width: 100%;
+  }
+}
+
+/* Ascundem vechile stiluri de sidebar care nu mai sunt folosite */
+.mineral-sidebar {
+  display: none;
+}
+
+/* Ajustam mineral-layout sa nu mai fie grid cu 2 coloane */
+.mineral-layout {
+  display: block;
+}
+
+.mineral-main {
+  max-width: 100%;
+}
